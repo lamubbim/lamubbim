@@ -1,14 +1,97 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <title>LAMUBBIN</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LAMUBBIN | Página inicial</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>LAMUBBIN</h1>
-  <p>Laboratório Multiusuário de Bioquímica e Biologia Molecular</p>
-  <p>
-    <a href="estatuto.html">Acessar Estatuto</a>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="LAMUBBIN">
+      <span class="mark"></span>
+      <span class="title">
+        <strong>LAMUBBIN</strong>
+        <span>Laboratório Multiusuário de Bioquímica e Biologia Molecular</span>
+      </span>
+    </a>
+
+    <nav class="menu" aria-label="Menu">
+      <a href="index.html">Início</a>
+      <a href="estatuto.html">Estatuto</a>
+      <a href="regulamento.html">Regulamento</a>
+      <a href="comite-gestor.html">Comitê gestor</a>
+      <a href="comite-usuarios.html">Comitê de usuários</a>
+      <a href="https://portal.ufsm.br/agendamento/index.html" target="_blank" rel="noopener">
+        Agendamento
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="container page">
+  <h1 style="font-size:34px; margin-bottom:8px;">LAMUBBIN</h1>
+  <p class="muted" style="margin-top:0;">
+    Laboratório Multiusuário de Bioquímica e Biologia Molecular — UFSM (CCNE/DBBM).
   </p>
+
+  <!-- Área do logo (substitua quando tiver o arquivo) -->
+  <div class="card" style="display:flex; gap:14px; align-items:center;">
+    <div style="width:72px; height:72px; border-radius:16px; background:linear-gradient(135deg, var(--brand), var(--brand2));">
+    </div>
+    <div>
+      <h2 style="margin:0 0 6px;">Documentos e Governança</h2>
+      <p class="muted" style="margin:0;">
+        Acesse estatuto, regulamento, comitês e o portal de agendamento institucional.
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-top:16px;" class="grid">
+    <a class="card" href="estatuto.html" style="display:block;">
+      <h3 style="margin:0 0 6px;">Estatuto</h3>
+      <p class="muted" style="margin:0;">Estrutura, organização e funcionamento do LAMUBBIN.</p>
+    </a>
+
+    <a class="card" href="regulamento.html" style="display:block;">
+      <h3 style="margin:0 0 6px;">Regulamento</h3>
+      <p class="muted" style="margin:0;">Normas e regras de uso e gestão (documento oficial).</p>
+    </a>
+
+    <a class="card" href="comite-gestor.html" style="display:block;">
+      <h3 style="margin:0 0 6px;">Comitê Gestor</h3>
+      <p class="muted" style="margin:0;">Composição e documento de nomeação.</p>
+    </a>
+
+    <a class="card" href="comite-usuarios.html" style="display:block;">
+      <h3 style="margin:0 0 6px;">Comitê de Usuários</h3>
+      <p class="muted" style="margin:0;">Composição e documento de nomeação.</p>
+    </a>
+
+    <a class="card" href="https://portal.ufsm.br/agendamento/index.html" target="_blank" rel="noopener" style="display:block;">
+      <h3 style="margin:0 0 6px;">Agendamento</h3>
+      <p class="muted" style="margin:0;">Abrir o portal UFSM para agendar uso da infraestrutura.</p>
+      <p class="muted" style="margin:10px 0 0;"><span class="pill">Link externo</span></p>
+    </a>
+  </div>
+
+  <div class="card" style="margin-top:16px;">
+    <h2 style="margin:0 0 10px;">Contato institucional</h2>
+    <p style="margin:0;">
+      <strong>UFSM – CCNE/DBBM</strong><br/>
+      Campus Sede, Santa Maria – RS<br/>
+      E-mail: <a href="mailto:departamentos.ccne@ufsm.br">departamentos.ccne@ufsm.br</a>
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">© <span id="y"></span> LAMUBBIN — UFSM</div>
+</footer>
+
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
 </body>
 </html>
